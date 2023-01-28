@@ -1,0 +1,92 @@
+body{
+    background-color: #0a0b1c;
+    font-family: sans-serif;
+    color: white;
+}
+
+.contenedor{
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card{
+    background-color: #1c1938;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 70%;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+h1 bold{
+    color: #9e5ecc;
+}
+
+.descripcion{
+    font-size: 15px;
+    font-weight: lighter;
+    color: gray;
+    padding-bottom: 10px;
+
+}
+
+.cifras{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size: larger;
+    margin-bottom: -30px;
+}
+
+.indice{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-size: small;
+    margin-top: -10px;
+}
+
+.info-card{
+    width: 40%;
+    padding: 20px 70px 20px 50px;
+}
+
+.imagen{
+    background-color: #9e5ecc;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    border-radius: 0 10px 10px 0;
+    background-image: url(images/image\ \(1\).jpg);
+}
+
+
+@media (max-width: 600px){
+    .card{
+        flex-direction: column-reverse;
+        height: 70%;
+        
+    
+    }
+
+    .imagen{
+        height: 60%;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        flex-wrap: wrap;
+    }
+
+    .info-card{
+        width: 70%;
+        height: 40%;
+        flex-wrap: wrap;
+    }
+}
